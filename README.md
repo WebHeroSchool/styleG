@@ -29,9 +29,6 @@ console.log(Object.prototype.hasOwnProperty.call(object, key));
 // excellent
 const has = Object.prototype.hasOwnProperty; // Кэшируем запрос в рамках 	модуля.
 console.log(has.call(object, key));
-/* или */
-import has from 'has'; // https://www.npmjs.com/package/has
-console.log(has(object, key));
 
 
 ### **Используйте одинарные кавычки `''` для строк.**
@@ -130,12 +127,12 @@ this.queue = [...contents];
 ### **Создание массивов**
 >Для создания массива используйте квадратные скобки. Не создавайте массивы через конструктор new Array.
 
-
 // bad
  var items = new Array();
 
 // good
  var items = [];  
+
 
 ### **Положение скобок**
 
